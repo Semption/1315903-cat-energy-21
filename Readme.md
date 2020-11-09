@@ -1,8 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Хорев Кирилл](https://up.htmlacademy.ru/adaptive/21/user/1315903).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Карина Карапетян](https://htmlacademy.ru/profile/karinaweb).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
