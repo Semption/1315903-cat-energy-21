@@ -1,6 +1,12 @@
 .program-selection {
   background-color: @c-basic-green;
   color: @c-white;
+
+  @media (min-width: @tablet-width) {
+    background-color: @c-white;
+    color: @c-black;
+    padding-left: 90px;
+  }
 }
 
 .program-selection__title {
@@ -10,12 +16,48 @@
   line-height: 36px;
   text-align: center;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    width: 414px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 50px;
+  }
 }
 
 .program-selection__description {
+  margin: 0;
+  margin-top: 47px;
+  padding: 0;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
   color: @c-white;
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    color: @c-black;
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+.program-selection__button {
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+  }
+}
+
+.program-selection__wrapper {
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+.program-selection__promo-image {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+  }
 }
