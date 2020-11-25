@@ -1,10 +1,18 @@
 .catalogs {
-  margin: 0 auto;
+  @media (max-width: @mobile-width-only) {
+    margin-top: 200px;
+    width: 100%;
+  }
 }
 
 .catalogs__item {
   background-color: @c-basic-grey;
   padding: 20px;
+
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .catalogs__description {
@@ -14,6 +22,8 @@
 }
 
 .catalogs__title {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;

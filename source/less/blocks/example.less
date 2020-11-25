@@ -3,8 +3,9 @@
 }
 
 .example__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
 }
 
 .example__title {
@@ -45,4 +46,24 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.example__list {
+  @media (max-width: @mobile-width-only) {
+    margin: 10px auto;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__result {
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
