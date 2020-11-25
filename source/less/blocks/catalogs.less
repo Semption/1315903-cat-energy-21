@@ -3,6 +3,10 @@
     margin-top: 200px;
     width: 100%;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 505px;
+  }
 }
 
 .catalogs__item {
@@ -13,12 +17,23 @@
     width: 100%;
     margin-bottom: 20px;
   }
+
+  @media (min-width: @tablet-width) {
+    min-height: 372px;
+    margin-bottom: 30px;
+  }
 }
 
 .catalogs__description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   color: @c-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 30px;
+  }
 }
 
 .catalogs__title {
@@ -27,6 +42,11 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalogs__link {
@@ -35,4 +55,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @c-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
