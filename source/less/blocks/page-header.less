@@ -6,6 +6,15 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+  }
 }
 
 .page-header__wrapper {
@@ -69,5 +78,9 @@
 .page-header__nav {
   @media (min-width: @tablet-width) {
     width: 70%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
   }
 }

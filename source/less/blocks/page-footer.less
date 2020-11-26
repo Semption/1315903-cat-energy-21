@@ -1,13 +1,35 @@
 .page-footer {
   margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    position: relative;
+  }
 }
 
 .page-footer__contacts {
   min-height: 114px;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    height: 201px;
+    position: absolute;
+    background-color: @c-white;
+    z-index: 2;
+    left: 110px;
+    top: 50px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .page-footer__cooperation {
   @media (max-width: @mobile-width-only) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-evenly;
   }
@@ -21,6 +43,12 @@
   font-weight: 400;
   text-transform: uppercase;
   color: @c-light-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 200px;
+  }
 }
 
 .page-footer__street {
@@ -29,7 +57,13 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
   color: @c-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 .page-footer__htmlacademy-title {
@@ -44,6 +78,11 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -70,6 +109,14 @@
     flex-direction: column;
     text-align: center;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .page-footer__logo-link {
@@ -81,9 +128,21 @@
 }
 
 .page-footer__list {
+  list-style: none;
+
   @media (max-width: @mobile-width-only) {
     display: flexbox;
     border-bottom: 1px solid @c-border-footer;
-    list-style: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
+}
+
+.page-footer__htmlacademy-image {
+  @media (min-width: @tablet-width) {
+    margin-left: 23px;
   }
 }
