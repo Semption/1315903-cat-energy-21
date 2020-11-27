@@ -1,7 +1,6 @@
 .advantages {
-  width: 100%;
-
   @media (max-width: @mobile-width-only) {
+    padding-top: 27px;
     padding-bottom: 42px;
   }
 
@@ -21,9 +20,11 @@
 .advantages__title {
   font-size: 36px;
   line-height: 40px;
-  font-weight: 400;
-  padding-bottom: 40px;
   margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 38px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 60px;

@@ -1,6 +1,4 @@
 .page-footer {
-  margin-top: 30px;
-
   @media (min-width: @tablet-width) {
     margin-top: 0;
     position: relative;
@@ -8,7 +6,10 @@
 }
 
 .page-footer__contacts {
-  min-height: 114px;
+  @media (max-width: @mobile-width-only) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 570px;
@@ -24,10 +25,9 @@
 }
 
 .page-footer__cooperation {
-  @media (max-width: @mobile-width-only) {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 100%;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -43,6 +43,11 @@
   font-weight: 400;
   text-transform: uppercase;
   color: @c-light-black;
+  word-break: break-word;
+
+  @media (max-width: @mobile-width-only) {
+    width: 45%;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -59,6 +64,10 @@
   line-height: 20px;
   text-align: left;
   color: @c-dark-grey;
+
+  @media (max-width: @tablet-width) {
+    width: 45%;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -131,7 +140,7 @@
   list-style: none;
 
   @media (max-width: @mobile-width-only) {
-    display: flexbox;
+    display: flex;
     border-bottom: 1px solid @c-border-footer;
   }
 

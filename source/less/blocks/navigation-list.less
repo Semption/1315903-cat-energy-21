@@ -25,11 +25,6 @@
   line-height: 20px;
   list-style: none;
   text-align: center;
-  min-height: 65px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
   border-top: 1px solid @c-border-menu;
 
   @media (max-width: @mobile-width-only) {
@@ -50,7 +45,6 @@
   }
 }
 
-
 .navigation-list__item:last-child {
   border-top: 1px solid @c-border-menu;
   border-bottom: 1px solid @c-border-menu;
@@ -62,7 +56,12 @@
 
 .navigation-list__link {
   color: @c-black;
+  display: block;
   text-decoration: none;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 22px 20px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
