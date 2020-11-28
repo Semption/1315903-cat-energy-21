@@ -11,6 +11,10 @@
     padding-bottom: 30px;
   }
 
+  @media (min-width: @tablet-width) {
+    padding: 60px 72px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 570px;
     height: 201px;
@@ -31,7 +35,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
 
@@ -65,13 +69,14 @@
   text-align: left;
   color: @c-dark-grey;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     width: 45%;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     text-align: right;
+    width: 35%;
   }
 }
 

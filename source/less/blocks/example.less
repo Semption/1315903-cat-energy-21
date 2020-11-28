@@ -7,6 +7,7 @@
 
   @media (min-width: @tablet-width) {
     background-color: @c-white;
+    padding-top: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,6 +36,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,6 +65,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 54px;
   }
 }
 
@@ -110,7 +113,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    width: 30%;
+    width: 25%;
     text-align: right;
   }
 
@@ -126,8 +129,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
-  flex-basis: 100%;
 
   @media (max-width: @mobile-width-only) {
     justify-content: space-between;
@@ -136,7 +137,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-around;
   }
 
   @media (min-width: @desktop-width) {
@@ -150,10 +152,10 @@
 
 .example__group-numbers {
   @media (min-width: @tablet-width) {
-    margin-top: 60px;
-    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 59px;
+    flex-basis: 100%;
   }
 
   @media (min-width: @desktop-width) {
@@ -174,6 +176,7 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    background-color: @c-light-grey;
   }
 
   @media (min-width: @desktop-width) {
@@ -199,7 +202,7 @@
     text-align: center;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 150px;
+  @media (min-width: @tablet-width) {
+    text-align: center;
   }
 }
