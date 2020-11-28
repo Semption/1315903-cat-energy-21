@@ -42,7 +42,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 280px 280px;
+    grid-template-rows: minmax(280px, auto) minmax(280px, auto);
   }
 
   @media (min-width: @desktop-width) {
@@ -57,11 +57,11 @@
   font-weight: 400;
   line-height: 18px;
   color: @c-dark-grey;
-  width: 74%;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 74%;
 
     &::before {
       content: "";
