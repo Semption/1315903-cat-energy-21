@@ -62,38 +62,30 @@
 }
 
 .catalogs__item--losing {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     &::after {
       content: "";
       display: block;
       width: 260px;
       height: 211px;
-      background-image: url("../img/catalogs/cat_back_losing.svg");
+      background-image: url("../img/cat-back-losing.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
   }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
 }
 
 .catalogs__item--weight {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     &::after {
       content: "";
       display: block;
       width: 311px;
       height: 200px;
-      background-image: url("../img/catalogs/cat_back_weight.svg");
+      background-image: url("../img/cat-back-weight.svg");
       background-repeat: no-repeat;
       background-position: right;
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
   }
 }
 
@@ -144,7 +136,7 @@
       display: inline-block;
       width: 100px;
       height: 106px;
-      background-image: url("../img/catalogs/cat_back_losing.svg");
+      background-image: url("../img/cat-back-losing.svg");
       background-repeat: no-repeat;
       background-size: 100px 106px;
       margin-right: 47px;
@@ -160,7 +152,7 @@
       display: inline-block;
       width: 134px;
       height: 100px;
-      background-image: url("../img/catalogs/cat_back_weight.svg");
+      background-image: url("../img/cat-back-weight.svg");
       background-repeat: no-repeat;
       background-size: 134px 100px;
       margin-right: 62px;
