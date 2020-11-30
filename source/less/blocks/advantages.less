@@ -12,8 +12,8 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 71px;
+    padding-bottom: 0;
     border: none;
-    margin-bottom: 205px;
   }
 }
 
@@ -42,13 +42,11 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(280px, auto) minmax(280px, auto);
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(280px, auto);
   }
 }
 
@@ -58,6 +56,7 @@
   font-weight: 400;
   line-height: 18px;
   color: @c-dark-grey;
+  min-height: 280px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -71,6 +70,8 @@
       height: 80px;
       background-color: @c-basic-green;
       margin-bottom: 31px;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -82,10 +83,7 @@
     background-position: 66% 0%;
 
     &::before {
-      content: "";
       background-image: url("../img/advantages/icon_leaf.svg");
-      background-position: center;
-      background-repeat: no-repeat;
     }
   }
 }
@@ -97,7 +95,6 @@
     background-position: 81% 0%;
 
     &::before {
-      content: "";
       background-image: url("../img/advantages/icon_tub.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -112,7 +109,6 @@
     background-position: 84% 0%;
 
     &::before {
-      content: "";
       background-image: url("../img/advantages/icon_eat.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -127,7 +123,6 @@
     background-position: 89% 0%;
 
     &::before {
-      content: "";
       background-image: url("../img/advantages/icon_alarm.svg");
       background-position: center;
       background-repeat: no-repeat;

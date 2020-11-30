@@ -25,8 +25,8 @@
 
 .program-selection__banner {
   @media (max-width: @mobile-width-only) {
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/program-selection/cat-mobile.jpg");
+    background-color: rgba(104, 183, 56, 0.85);
+    background-image: url("../img/program-selection/cat-mobile-green.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     color: @c-white;
@@ -106,9 +106,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    left: -530px;
-    top: 457px;
+    margin-left: calc(~"-100% +" @margin-button);
+    margin-top: 450px;
   }
 }
 
@@ -141,6 +140,8 @@
 
   @media (min-width: @tablet-width) {
     width: 709px;
+    display: block;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
