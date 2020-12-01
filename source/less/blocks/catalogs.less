@@ -22,8 +22,10 @@
     margin-bottom: 30px;
     padding: 77px 28px 53px 52px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-basis: 100%;
+    position: relative;
 
     &:last-child {
       margin-bottom: 0;
@@ -63,28 +65,34 @@
 
 .catalogs__item--losing {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding-right: 39%;
+
     &::after {
       content: "";
-      display: block;
-      width: 260px;
+      position: absolute;
+      width: 268px;
       height: 211px;
       background-image: url("../img/cat-back-losing.svg");
       background-repeat: no-repeat;
       background-position: center;
+      left: 60%;
     }
   }
 }
 
 .catalogs__item--weight {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding-right: 44.1%;
+
     &::after {
       content: "";
-      display: block;
-      width: 311px;
+      position: absolute;
+      width: 268px;
       height: 200px;
       background-image: url("../img/cat-back-weight.svg");
       background-repeat: no-repeat;
-      background-position: right;
+      background-position: center;
+      left: 59%;
     }
   }
 }
