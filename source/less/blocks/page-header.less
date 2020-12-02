@@ -6,49 +6,118 @@
     flex-direction: row;
     justify-content: space-between;
   }
-}
 
-.page-header__wrapper {
-  margin: auto;
-  padding-top: 12px;
-  padding-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
-    width: 30%;
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 12px 20px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 30%;
+    padding: 24px 30px;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 30%;
+    min-height: 165px;
+    min-width: 422px;
+    padding-top: 53px;
+    padding-left: 110px;
+    padding-bottom: 53px;
+    justify-content: start;
+  }
+}
+
+.page-header__logo-link {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-header__logo-small {
+  @media (min-width: @desktop-width) {
+    min-height: 59px;
+    margin-right: 14px;
+  }
+}
+
+.page-header__logo-main {
+  @media (max-width: @mobile-width-only) {
+    height: 38px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 59px;
   }
 }
 
 .page-header__toggle {
+  margin: 0;
+  padding: 0;
+  display: block;
   width: 24px;
   height: 24px;
   border: 0;
-  background: url("../img/page-header/burger.svg") no-repeat;
-  margin-right: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
+.page-header__toggle--closed {
+  background-image: url("../img/burger.svg");
+}
+
 .page-header__logo {
   min-width: 191px;
   width: 100%;
-  margin-left: 20px;
+
+  @media (max-width: @mobile-width-only) {
+    width: 190px;
+  }
 
   @media (min-width: @tablet-width) {
-    margin-left: 30px;
+    width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
   }
 }
 
 .page-header__nav {
   @media (min-width: @tablet-width) {
     width: 70%;
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
   }
 }
