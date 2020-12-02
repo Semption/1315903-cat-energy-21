@@ -12,22 +12,42 @@
   margin-top: 0;
   margin-bottom: 37px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .selection__wrapper {
   margin-top: 0;
   padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 13px;
+  display: flex;
+  align-items: center;
 
   &:last-child {
     margin-bottom: 0;
   }
 
   @media (max-width: @mobile-width-only) {
-    display: flex;
-    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
   }
 }
 
@@ -41,6 +61,16 @@
   margin-top: 0;
   margin-bottom: 39px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .selection__label {
@@ -62,6 +92,17 @@
 
   @media (max-width: @mobile-width-only) {
     width: 100%;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding-left: 20px;
   }
 }
 
@@ -78,13 +119,33 @@
   @media (max-width: @mobile-width-only) {
     width: 100%;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .selection__main-group {
   padding: 0;
   border: 0;
-  border-bottom: 1px solid @c-border-footer;
-  padding-bottom: 24px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 24px;
+    border-bottom: 1px solid @c-border-footer;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: 0;
+  }
 }
 
 .selection__program-group {
@@ -97,6 +158,21 @@
   border: 0;
   border-bottom: 1px solid @c-border-footer;
   margin-bottom: 26px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @c-input-border;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: 1px solid @c-input-border;
+  }
 }
 
 .selection__contact-group {
@@ -116,6 +192,17 @@
   color: @c-dark-grey;
 
   @media (max-width: @mobile-width-only) {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 20px 20px;
     width: 100%;
   }
 }
@@ -127,6 +214,17 @@
   color: @c-dark-grey;
 
   @media (max-width: @mobile-width-only) {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 20px 20px;
     width: 100%;
   }
 }
@@ -140,6 +238,21 @@
   width: 100%;
   margin-bottom: 27px;
   margin-top: 34px;
+
+
+  @media (max-width: @mobile-width-only) {
+    padding: 15px 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 20px;
+    margin-top: 76px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 15px 20px;
+  }
 }
 
 .selection__additional-group {
@@ -159,6 +272,16 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .selection__submit {
@@ -170,10 +293,18 @@
 .selection__header-additional {
   text-transform: none;
   margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .selection__header-contact {
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .selection__header-comment {

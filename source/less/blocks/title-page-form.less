@@ -3,5 +3,18 @@
   line-height: 24px;
   color: @c-black;
   font-weight: 400;
-  padding-left: 20px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
