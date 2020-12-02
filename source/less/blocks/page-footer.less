@@ -1,4 +1,6 @@
 .page-footer {
+  background-color: @c-basic-grey;
+
   @media (min-width: @tablet-width) {
     margin-top: 0;
     position: relative;
@@ -9,22 +11,22 @@
   @media (max-width: @mobile-width-only) {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: @c-white;
   }
 
   @media (min-width: @tablet-width) {
     padding: 60px 72px;
+    background-color: @c-white;
   }
 
   @media (min-width: @desktop-width) {
-    width: 570px;
-    min-height: 201px;
-    position: absolute;
-    background-color: @c-white;
-    z-index: 2;
-    left: 110px;
-    top: 50px;
-    display: flex;
-    align-items: center;
+    padding: 0 72px;
+  }
+
+  @media (min-width: @full-width) {
+    position: relative;
+    padding: 0;
+    min-height: 400px;
   }
 }
 
@@ -36,6 +38,24 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    min-height: 201px;
+    position: absolute;
+    background-color: @c-white;
+    z-index: 2;
+    left: 110px;
+    top: calc(~"50% - "@cooperation-desktop);
+    display: flex;
+    align-items: center;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+
+  @media (min-width: @full-width) {
+    top: calc(~"50% - "@cooperation-full);
   }
 }
 
@@ -56,7 +76,11 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 21px;
-    width: 35%;
+    width: 50%;
+  }
+
+  @media (min-width: @full-width) {
+    width: 50%;
   }
 }
 
@@ -77,6 +101,12 @@
     font-size: 16px;
     text-align: right;
     width: 35%;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    text-align: left;
+    width: 50%;
   }
 }
 
@@ -120,6 +150,12 @@
   position: relative;
   border: 0;
   width: 100%;
+
+  @media (min-width: @full-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .page-footer__objects {
@@ -133,6 +169,14 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1920px;
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
