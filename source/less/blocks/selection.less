@@ -24,6 +24,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .selection__description {
@@ -43,6 +48,8 @@
   line-height: 18px;
   color: @c-dark-grey;
   text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 10px;
 }
 
 .selection__text {
@@ -52,6 +59,10 @@
   color: @c-dark-grey;
   height: 46px;
   border: 1px solid @c-input-border;
+
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
 }
 
 .selection__number {
@@ -61,6 +72,12 @@
   color: @c-dark-grey;
   height: 46px;
   border: 1px solid @c-input-border;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
 }
 
 .selection__main-group {
@@ -97,6 +114,10 @@
   height: 46px;
   text-transform: uppercase;
   color: @c-dark-grey;
+
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
 }
 
 .selection__phone {
@@ -104,13 +125,17 @@
   height: 46px;
   text-transform: uppercase;
   color: @c-dark-grey;
+
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
 }
 
 .selection__comment {
   border: 1px solid @c-input-border;
   text-transform: uppercase;
   color: @c-dark-grey;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   width: 100%;
   margin-bottom: 27px;
@@ -153,4 +178,12 @@
 
 .selection__header-comment {
   margin-bottom: 34px;
+}
+
+.selection__radio {
+  margin-right: 10px;
+}
+
+.selection__checkbox {
+  margin-right: 10px;
 }
