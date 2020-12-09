@@ -38,6 +38,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
     margin-left: 110px;
     margin-right: 110px;
   }
@@ -106,6 +108,11 @@
   text-transform: uppercase;
   white-space: nowrap;
   margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection__text {
@@ -117,6 +124,11 @@
   border: 1px solid @c-input-border;
   padding: 15px 20px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection__number {
@@ -134,11 +146,22 @@
   }
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     width: 100%;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
+  }
+}
+
+.selection__radio-label {
+  color: @c-dark-grey-2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -163,7 +186,8 @@
   @media (min-width: @desktop-width) {
     grid-area: main-group;
     padding-left: 110px;
-    padding-right: 110px;
+    padding-right: 0;
+    margin-right: 80px;
     border: 0;
   }
 }
@@ -196,8 +220,13 @@
   @media (min-width: @desktop-width) {
     grid-area: program-group;
     border: 1px solid @c-input-border;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-left: 0;
+    margin-right: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -253,6 +282,8 @@
   }
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     padding: 10px 20px;
     width: 100%;
   }
@@ -277,6 +308,8 @@
   }
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     padding: 10px 20px;
     width: 100%;
   }
@@ -537,6 +570,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-left: 70px;
+    margin-right: 70px;
     grid-area: confirm-wrapper;
     display: grid;
     grid-template-columns: 1fr 1fr;
