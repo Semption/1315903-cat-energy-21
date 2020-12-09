@@ -76,38 +76,42 @@
               </p>
             </div>
           </fieldset>
-          <div class="selection__label-wrapper">
-            <label class="selection__header-comment title-page-form" for="comment-field">Комментарий</label>
+          <div class="selection__comment-wrapper">
+            <h2 class="selection__header-comment title-page-form" for="comment-field">Комментарий</h2>
           </div>
-          <p class="selection__wrapper">
-          <textarea class="selection__comment" name="comment" id="comment-field" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          <p class="selection__wrapper selection__form-textarea">
+          <textarea class="selection__comment" name="comment" id="comment-field" cols="30">Расскажите обо всех повадках кота</textarea>
           </p>
           <fieldset class="selection__additional-group">
-            <legend class="selection__header-additional title-page-form">Дополнительно</legend>
-            <p class="selection__wrapper">
-              <input class="selection__checkbox" type="checkbox" name="sweetener" id="sweetener-field" checked>
-              <label for="sweetener-field" class="selection__checkbox-label">Cахарозаменитель</label>
-            </p>
-            <p class="selection__wrapper">
-              <input class="selection__checkbox" type="checkbox" name="water" id="water-field">
-              <label for="water-field" class="selection__checkbox-label">Питьевая вода</label>
-            </p>
-            <p class="selection__wrapper">
-              <input class="selection__checkbox" type="checkbox" name="milk" id="milk-field">
-              <label for="milk-field" class="selection__checkbox-label">Молоко</label>
-            </p>
-            <p class="selection__wrapper">
-              <input class="selection__checkbox" type="checkbox" name="vitamins" id="vitamins-field">
-              <label for="vitamins-field" class="selection__checkbox-label">Витамины</label>
-            </p>
+            <h2 class="selection__header-additional title-page-form">Дополнительно</h2>
+            <div class="selection__choice-wrapper">
+              <p class="selection__wrapper">
+                <input class="selection__checkbox" type="checkbox" name="sweetener" id="sweetener-field" checked>
+                <label for="sweetener-field" class="selection__checkbox-label">Cахарозаменитель</label>
+              </p>
+              <p class="selection__wrapper">
+                <input class="selection__checkbox" type="checkbox" name="water" id="water-field">
+                <label for="water-field" class="selection__checkbox-label">Питьевая вода</label>
+              </p>
+              <p class="selection__wrapper">
+                <input class="selection__checkbox" type="checkbox" name="milk" id="milk-field">
+                <label for="milk-field" class="selection__checkbox-label">Молоко</label>
+              </p>
+              <p class="selection__wrapper">
+                <input class="selection__checkbox" type="checkbox" name="vitamins" id="vitamins-field">
+                <label for="vitamins-field" class="selection__checkbox-label">Витамины</label>
+              </p>
+            </div>
           </fieldset>
-          <button class="selection__submit button" type="submit">Отправить заявку</button>
-          <p class="selection__legend">* — Обязательные поля</p>
+          <div class="selection__confirm-wrapper">
+            <button class="selection__submit button button--sendform" type="submit">Отправить заявку</button>
+            <p class="selection__legend">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
     <footer class="page__footer page-footer">
-      <div class="page-footer__contacts container">
+      <div class="page-footer__contacts page-footer__contacts--formpage container">
         <div class="page-footer__cooperation">
           <h2 class="page-footer__cooperation-header">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <p class="page-footer__street">

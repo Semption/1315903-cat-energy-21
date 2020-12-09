@@ -1,5 +1,22 @@
 .selection {
   padding-top: 27px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.selection__form {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "main-group program-group"
+      "contact-group contact-group"
+      "comment-wrapper comment-wrapper"
+      "form-textarea form-textarea"
+      "additional-group additional-group"
+      "confirm-wrapper confirm-wrapper";
+  }
 }
 
 .selection__title {
@@ -14,6 +31,8 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
     margin-left: 70px;
     margin-right: 70px;
   }
@@ -42,7 +61,6 @@
   @media (max-width: @mobile-width-only) {
     padding-left: 20px;
     padding-right: 20px;
-
   }
 
   @media (min-width: @tablet-width) {
@@ -68,8 +86,11 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     margin-left: 70px;
     margin-right: 70px;
+    width: 323px;
   }
 
   @media (min-width: @desktop-width) {
@@ -140,6 +161,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-area: main-group;
     padding-left: 110px;
     padding-right: 110px;
     border: 0;
@@ -172,6 +194,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-area: program-group;
     border: 1px solid @c-input-border;
     padding-left: 110px;
     padding-right: 110px;
@@ -194,13 +217,25 @@
     position: absolute;
     right: 0;
     top: 15px;
-    height: 3px;
+    height: 2px;
     background-color: @c-basic-green;
     z-index: -1;
 
     @media (max-width: @mobile-width-only) {
       width: 70%;
     }
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-area: contact-group;
   }
 }
 
@@ -252,7 +287,28 @@
   }
 }
 
-.selection__label-wrapper {
+.selection__comment-wrapper {
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15px;
+    height: 2px;
+    background-color: @c-basic-green;
+    z-index: -1;
+
+    @media (max-width: @mobile-width-only) {
+      width: 70%;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+  }
+
   @media (max-width: @mobile-width-only) {
     margin-bottom: 34px;
     padding-left: 20px;
@@ -266,6 +322,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-area: comment-wrapper;
     margin-bottom: 76px;
     padding-left: 110px;
     padding-right: 110px;
@@ -285,6 +342,7 @@
     padding: 15px 15px;
     margin-left: 20px;
     margin-right: 20px;
+    min-height: 150px;
   }
 
   @media (min-width: @tablet-width) {
@@ -292,12 +350,22 @@
     margin-left: 70px;
     margin-right: 70px;
     margin-bottom: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 174px;
   }
 
   @media (min-width: @desktop-width) {
+    grid-area: form-textarea;
     margin-left: 110px;
     margin-right: 110px;
     padding: 15px 20px;
+  }
+}
+
+.selection__form-textarea {
+  @media (min-width: @desktop-width) {
+    grid-area: form-textarea;
   }
 }
 
@@ -309,6 +377,26 @@
   padding: 0;
   margin: 0;
   border: 0;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15px;
+    height: 2px;
+    background-color: @c-basic-green;
+    z-index: -1;
+
+    @media (max-width: @mobile-width-only) {
+      width: 70%;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+  }
 
   @media (max-width: @mobile-width-only) {
     padding-left: 20px;
@@ -323,6 +411,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-area: additional-group;
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -335,10 +424,12 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 32px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding-left: 70px;
-    padding-right: 70px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
@@ -350,13 +441,28 @@
 .selection__submit {
   margin: auto;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .selection__header-additional {
   text-transform: none;
   margin-bottom: 34px;
 
+  @media (max-width: @mobile-width-only) {
+    width: 160px;
+  }
+
   @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    font-size: 36px;
+    line-height: 36px;
+    width: 291px;
     margin-bottom: 57px;
   }
 }
@@ -368,12 +474,27 @@
   width: 200px;
 
   @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
     margin-bottom: 76px;
+    width: 593px;
   }
 }
 
 .selection__header-comment {
-  margin-bottom: 34px;
+  width: 140px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    font-size: 36px;
+    line-height: 36px;
+    width: 262px;
+  }
 }
 
 .selection__radio {
@@ -382,4 +503,43 @@
 
 .selection__checkbox {
   margin-right: 10px;
+}
+
+.selection__checkbox-label {
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.selection__choice-wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.selection__confirm-wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 30px;
+    padding: 0 40px;
+    justify-items: left;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-area: confirm-wrapper;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
