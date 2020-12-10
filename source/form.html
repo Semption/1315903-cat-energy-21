@@ -30,82 +30,92 @@
     </header>
     <main class="page__main page-main">
       <section class="selection">
-        <h1 class="selection__title">Подбор программы</h1>
-        <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="selection__main-description">
+          <h1 class="selection__title">Подбор программы</h1>
+          <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
         <form method="POST" class="selection__form" action="https://echo.htmlacademy.ru">
-          <fieldset class="selection__main-group">
-            <legend class="visually-hidden">Основная информация</legend>
-            <p class="selection__wrapper">
-              <label class="selection__label" for="name-field">Имя:*</label>
-              <input class="selection__text" type="text" name="name" id="name-field" value="Барсик" required>
-            </p>
-            <p class="selection__wrapper">
-              <label class="selection__label" for="weight-field">Вес (кг):*</label>
-              <input class="selection__number" type="number" name="weight" id="weight-field" value="7" required>
-            </p>
-            <p class="selection__wrapper">
-              <label class="selection__label" for="age-field">Возраст (лет):</label>
-              <input class="selection__number" type="number" name="age" id="age-field" value="7">
-            </p>
-          </fieldset>
-          <fieldset class="selection__program-group">
-            <legend class="visually-hidden">Вариант программы</legend>
-            <p class="selection__wrapper">
-              <input class="selection__radio" type="radio" name="variant-program" id="loss-field" value="loss" checked />
-              <label for="loss-field" class="selection__radio-label">Похудение</label>
-            </p>
-            <p class="selection__wrapper">
-              <input class="selection__radio" type="radio" name="variant-program" id="weight-gain-field" value="weight-gain" />
-              <label for="weight-gain-field" class="selection__radio-label">Набор массы</label>
-            </p>
-            <p class="selection__wrapper">
-              <input class="selection__radio" type="radio" name="variant-program" id="obscurity-field" value="obscurity" />
-              <label for="obscurity-field" class="selection__radio-label">Не знаю (Нужен ваш совет)</label>
-            </p>
-          </fieldset>
+          <div class="selection__first-group">
+            <fieldset class="selection__main-group">
+              <legend class="visually-hidden">Основная информация</legend>
+              <p class="selection__wrapper">
+                <label class="selection__label" for="name-field">Имя:*</label>
+                <input class="selection__text" type="text" name="name" id="name-field" value="Барсик" required>
+              </p>
+              <p class="selection__wrapper">
+                <label class="selection__label" for="weight-field">Вес (кг):*</label>
+                <input class="selection__number" type="number" name="weight" id="weight-field" value="7" required>
+              </p>
+              <p class="selection__wrapper">
+                <label class="selection__label" for="age-field">Возраст (лет):</label>
+                <input class="selection__number" type="number" name="age" id="age-field" value="7">
+              </p>
+            </fieldset>
+            <fieldset class="selection__program-group">
+              <legend class="visually-hidden">Вариант программы</legend>
+              <p class="selection__wrapper">
+                <input class="selection__radio" type="radio" name="variant-program" id="loss-field" value="loss" checked />
+                <label for="loss-field" class="selection__radio-label">Похудение</label>
+              </p>
+              <p class="selection__wrapper">
+                <input class="selection__radio" type="radio" name="variant-program" id="weight-gain-field" value="weight-gain" />
+                <label for="weight-gain-field" class="selection__radio-label">Набор массы</label>
+              </p>
+              <p class="selection__wrapper">
+                <input class="selection__radio" type="radio" name="variant-program" id="obscurity-field" value="obscurity" />
+                <label for="obscurity-field" class="selection__radio-label">Не знаю (Нужен ваш совет)</label>
+              </p>
+            </fieldset>
+          </div>
           <fieldset class="selection__contact-group">
             <div class="selection__container">
-              <h2 class="selection__header-contact title-page-form">Контактные данные (владельца кота)</h2>
-              <p class="selection__wrapper">
-                <label class="selection__label" for="name-field">e-mail:*</label>
-                <input class="selection__email" type="email" name="email" id="email-field" value="kuklachev@gmail.com" required>
-              </p>
-              <p class="selection__wrapper">
-                <label class="selection__label" for="phone-field">Телефон:*</label>
-                <input class="selection__phone" type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90" required>
-              </p>
+              <div class="selection__contact-data">
+                <h2 class="selection__header-contact title-page-form">Контактные данные (владельца кота)</h2>
+                <p class="selection__wrapper">
+                  <label class="selection__label" for="name-field">e-mail:*</label>
+                  <input class="selection__email" type="email" name="email" id="email-field" value="kuklachev@gmail.com" required>
+                </p>
+                <p class="selection__wrapper">
+                  <label class="selection__label" for="phone-field">Телефон:*</label>
+                  <input class="selection__phone" type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90" required>
+                </p>
+              </div>
             </div>
           </fieldset>
           <div class="selection__comment-wrapper">
-            <h2 class="selection__header-comment title-page-form" for="comment-field">Комментарий</h2>
+            <div class="selection__comment-data">
+              <h2 class="selection__header-comment title-page-form" for="comment-field">Комментарий</h2>
+              <textarea class="selection__comment" name="comment" id="comment-field" cols="30">Расскажите обо всех повадках кота</textarea>
+            </div>
           </div>
-          <p class="selection__wrapper selection__form-textarea">
-          <textarea class="selection__comment" name="comment" id="comment-field" cols="30">Расскажите обо всех повадках кота</textarea>
-          </p>
           <fieldset class="selection__additional-group">
-            <h2 class="selection__header-additional title-page-form">Дополнительно</h2>
-            <div class="selection__choice-wrapper">
-              <p class="selection__wrapper">
-                <input class="selection__checkbox" type="checkbox" name="sweetener" id="sweetener-field" checked>
-                <label for="sweetener-field" class="selection__checkbox-label">Cахарозаменитель</label>
-              </p>
-              <p class="selection__wrapper">
-                <input class="selection__checkbox" type="checkbox" name="water" id="water-field">
-                <label for="water-field" class="selection__checkbox-label">Питьевая вода</label>
-              </p>
-              <p class="selection__wrapper">
-                <input class="selection__checkbox" type="checkbox" name="milk" id="milk-field">
-                <label for="milk-field" class="selection__checkbox-label">Молоко</label>
-              </p>
-              <p class="selection__wrapper">
-                <input class="selection__checkbox" type="checkbox" name="vitamins" id="vitamins-field">
-                <label for="vitamins-field" class="selection__checkbox-label">Витамины</label>
-              </p>
+            <div class="selection__additional-data">
+              <h2 class="selection__header-additional title-page-form">Дополнительно</h2>
+              <div class="selection__choice-wrapper">
+                <p class="selection__wrapper">
+                  <input class="selection__checkbox" type="checkbox" name="sweetener" id="sweetener-field" checked>
+                  <label for="sweetener-field" class="selection__checkbox-label">Cахарозаменитель</label>
+                </p>
+                <p class="selection__wrapper">
+                  <input class="selection__checkbox" type="checkbox" name="water" id="water-field">
+                  <label for="water-field" class="selection__checkbox-label">Питьевая вода</label>
+                </p>
+                <p class="selection__wrapper">
+                  <input class="selection__checkbox" type="checkbox" name="milk" id="milk-field">
+                  <label for="milk-field" class="selection__checkbox-label">Молоко</label>
+                </p>
+                <p class="selection__wrapper">
+                  <input class="selection__checkbox" type="checkbox" name="vitamins" id="vitamins-field">
+                  <label for="vitamins-field" class="selection__checkbox-label">Витамины</label>
+                </p>
+              </div>
             </div>
           </fieldset>
-          <div class="selection__confirm-wrapper">
-            <button class="selection__submit button button--sendform" type="submit">Отправить заявку</button>
-            <p class="selection__legend">* — Обязательные поля</p>
+          <div class="selection__confirm-row">
+            <div class="selection__confirm-wrapper">
+              <button class="selection__submit button button--sendform" type="submit">Отправить заявку</button>
+              <p class="selection__legend">* — Обязательные поля</p>
+            </div>
           </div>
         </form>
       </section>
