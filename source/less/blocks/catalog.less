@@ -1,19 +1,105 @@
 .catalog {
   margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 27px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 64px;
+  }
 }
 
 .catalog__title {
-  padding-top: 27px;
-  padding-bottom: 41px;
+  margin: 0;
+  margin-bottom: 41px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: @c-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 83px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
-.catalog-wrapper {
-  border-bottom: 1px solid @c-basic-gray-2;
+.catalog__wrapper {
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @c-basic-gray-2;
+
+    &:first-child {
+      border-top: 1px solid @c-basic-gray-2;
+    }
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 767px) {
+    border-bottom: 1px solid @c-basic-gray-2;
+
+    &:nth-child(2) {
+      border-top: 1px solid @c-basic-gray-2;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &:last-child {
+      display: grid;
+      align-items: end;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.catalog__item {
+  @media (max-width: @mobile-width-only) {
+    margin: 0 auto;
+  }
+}
+
+.catalog__more-taste {
+  @media (max-width: @mobile-width-only) {
+    margin: 0 auto;
+  }
+}
+
+.catalog__list {
+  @media (min-width: 640px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    padding-left: 30px;
+    padding-right: 30px;
+    column-gap: 60px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @full-tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px 324px;
+    padding-left: 30px;
+    padding-right: 30px;
+    column-gap: 30px;
+    width: 1100px;
+    margin: 0 auto;
+  }
 }
