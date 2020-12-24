@@ -19,7 +19,7 @@
       "specification"
       "item-order";
     justify-items: center;
-    background-image: linear-gradient(to bottom, @c-white 97px, @c-basic-grey 0);
+    background-image: linear-gradient(to bottom, @c-white 93px, @c-basic-grey 0);
     padding-left: 36px;
     padding-right: 37px;
     padding-top: 8px;
@@ -84,8 +84,11 @@
 }
 
 .products-item__specifications-data {
+  word-break: break-all;
+
   &:last-child {
     text-align: right;
+    width: 80px;
   }
 
   @media (min-width: @tablet-width) {
