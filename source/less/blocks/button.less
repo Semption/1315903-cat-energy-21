@@ -15,6 +15,17 @@
 .button--all {
   background-color: @c-basic-grey;
   color: @c-dark-grey;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    min-height: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    min-height: 40px;
+  }
 }
 
 .button--sendform {
@@ -36,8 +47,15 @@
 }
 
 .button--catalog {
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: @tablet-width) {
     width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
   }
 }
 

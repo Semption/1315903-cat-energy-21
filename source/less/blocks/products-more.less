@@ -78,7 +78,11 @@
       display: block;
       position: absolute;
       top: 52px;
-      left: 132px;
+      left: calc(~"50% - "30px);
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
