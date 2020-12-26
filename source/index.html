@@ -36,7 +36,11 @@
             <a href="#" class="program-selection__button button">Подобрать программу</a>
         </div>
         <div class="program-selection__other-items">
-          <img class="program-selection__promo-image" src="img/main-image.png" alt="Пример отображения упаковки обеда">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/main-image-desktop.png 1x, img/main-image-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/main-image-tablet.png 1x, img/main-image-tablet@2x.png 2x">
+            <img class="program-selection__promo-image" src="img/main-image.png" srcset="img/main-image@2x.png 2x" alt="Пример отображения упаковки обеда">
+          </picture>
         </div>
       </section>
       <section class="catalogs container">
@@ -123,28 +127,28 @@
       </div>
       <div class="page-footer__map-layer">
         <picture class="page-footer__map-row">
-          <source media="(min-width: 1440px)" srcset="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="page-footer__image-map">
-          <source media="(min-width: 768px)" srcset="img/map-768.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="page-footer__image-map">
-          <img src="img/map-320.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="page-footer__image-map" width="320" height="362">
+          <source media="(min-width: 1440px)" srcset="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width: 768px)" srcset="img/map-768.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="page-footer__image-map" src="img/map-320.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
         </picture>
         <iframe src="https://yandex.ru/map-widget/v1/-/CCUEAUdLCD" width="320" height="400" class="page-footer__yamaps-iframe">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </iframe>
       </div>
       <div class="page-footer__objects container">
-        <a class="page-footer__logo-link"><img src="img/footer-logo.svg" alt="Нижний логотип"></a>
+        <a class="page-footer__logo-link"><img src="img/footer-logo.svg" alt="Нижний логотип" width="128" height="24"></a>
         <ul class="page-footer__list">
-        <li class="page-footer__item">
-            <a class="page-footer__link page-footer__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li class="page-footer__item">
-          <a class="page-footer__link page-footer__link--instagram" href="#"><span class="visually-hidden">Instagram</span></a>
-        </li>
-        <li class="page-footer__item">
-          <a class="page-footer__link page-footer__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
-        </li>
+          <li class="page-footer__item">
+              <a class="page-footer__link page-footer__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--instagram" href="#"><span class="visually-hidden">Instagram</span></a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
         </ul>
-        <a class="page-footer__htmlacademy-title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<img src="img/icon-logo.svg" alt="Логотип HTML Academy" class="page-footer__htmlacademy-image"></a>
+        <a class="page-footer__htmlacademy-title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<img src="img/icon-logo.svg" alt="Логотип HTML Academy" class="page-footer__htmlacademy-image" width="27" height="34"></a>
       </div>
     </footer>
   </body>
