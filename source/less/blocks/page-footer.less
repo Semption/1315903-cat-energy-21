@@ -160,6 +160,19 @@
   border: 0;
   width: 100%;
 
+  @media (max-width: @mobile-width-only) {
+    &::after {
+      content: "";
+      display: block;
+      width: 57px;
+      height: 53px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     display: block;
@@ -377,5 +390,20 @@
   @media (min-width: @tablet-width) {
     width: 30px;
     height: 22px;
+  }
+}
+
+.page-footer__map-pin {
+  display: block;
+  width: 57px;
+  height: 53px;
+  position: absolute;
+  top: calc(~"50% - "29px);
+  left: calc(~"50% - "29px);
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: 106px;
   }
 }
