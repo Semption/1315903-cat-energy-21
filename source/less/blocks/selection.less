@@ -559,12 +559,24 @@
 
 .selection__checkbox {
   margin-right: 10px;
+  display: none;
 }
 
 .selection__checkbox-label {
+  cursor: pointer;
+  word-break: break-all;
+
+  @media (max-width: @mobile-width-only) {
+    font-size: 16px;
+    line-height: 30px;
+    min-height: 30px;
+    padding-left: 46px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
+    padding-left: 59px;
   }
 }
 
@@ -740,3 +752,100 @@
   }
 }
 
+.selection__radio:disabled + label,
+.selection__radio:checked:disabled + label,
+.selection__radio:hover:disabled + label,
+.selection__radio:checked:hover:disabled + label {
+  opacity: 0.3;
+}
+
+.selection__wrapper-checkbox {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.selection__checkbox + label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url("../img/check-off.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+  }
+}
+
+.selection__checkbox:checked + label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url("../img/check-on.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+  }
+}
+
+.selection__checkbox:checked:hover + label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url("../img/check-on-hover.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+  }
+}
+
+.selection__checkbox:hover + label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url("../img/check-off-hover.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+  }
+}
+
+.selection__checkbox:disabled + label,
+.selection__checkbox:checked:disabled + label,
+.selection__checkbox:hover:disabled + label,
+.selection__checkbox:checked:hover:disabled + label {
+  opacity: 0.3;
+}
