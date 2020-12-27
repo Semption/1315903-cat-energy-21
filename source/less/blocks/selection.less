@@ -214,10 +214,21 @@
 
 .selection__radio-label {
   color: @c-dark-grey-2;
+  cursor: pointer;
+  word-break: break-all;
+
+  @media (max-width: @mobile-width-only) {
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 45px;
+    min-height: 30px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
+    padding-left: 60px;
+    min-height: 40px;
   }
 }
 
@@ -257,6 +268,7 @@
   margin: 0;
   border: 0;
   border-bottom: 1px solid @c-border-footer;
+  position: relative;
 
   @media (max-width: @mobile-width-only) {
     padding-left: 20px;
@@ -542,6 +554,7 @@
 
 .selection__radio {
   margin-right: 10px;
+  display: none;
 }
 
 .selection__checkbox {
@@ -620,3 +633,110 @@
     left: 0;
   }
 }
+
+.selection__icon-email {
+  width: 18px;
+  height: 13px;
+  display: block;
+  position: absolute;
+  fill: transparent;
+  right: 15px;
+  top: calc(~"50% - "6px);
+  stroke: @c-dark-grey-2;
+}
+
+.selection__icon-phone {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 13px;
+  top: calc(~"50% - "10px);
+  stroke: transparent;
+  fill: @c-black;
+}
+
+.selection__wrapper--email {
+  position: relative;
+}
+
+.selection__wrapper--phone {
+  position: relative;
+}
+
+.selection__radio + label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    left: 28px;
+  }
+}
+
+.selection__radio:checked + label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    left: 28px;
+  }
+}
+
+.selection__radio:checked:hover + label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url("../img/radio-on-hover.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    left: 28px;
+  }
+}
+
+.selection__radio:hover + label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url("../img/radio-off-hover.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    left: 28px;
+  }
+}
+
