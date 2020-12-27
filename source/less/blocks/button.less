@@ -12,12 +12,30 @@
   padding: 10px 5px;
   text-align: center;
   word-break: break-all;
+
+  &:hover {
+    background-color: @c-basic-green-2;
+  }
+
+  &:active {
+    background-color: @c-basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--all {
   background-color: @c-basic-grey;
   color: @c-dark-grey;
   margin: 0 auto;
+
+  &:hover {
+    background-color: @c-basic-gray-2;
+  }
+
+  &:active {
+    background-color: @c-basic-gray-2;
+    color: rgba(68, 68, 68, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 248px;
@@ -26,7 +44,7 @@
 
   @media (min-width: @desktop-width) {
     width: 169px;
-    min-height: 40px;
+    min-height: 39px;
   }
 }
 
