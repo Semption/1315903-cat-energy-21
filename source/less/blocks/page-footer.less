@@ -134,6 +134,10 @@
   color: @c-dark-grey;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (max-width: @mobile-width-only) {
     display: flex;
     justify-content: space-between;
@@ -210,6 +214,14 @@
 }
 
 .page-footer__logo-link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (max-width: @mobile-width-only) {
     padding-bottom: 32px;
     border-bottom: 1px solid @c-border-footer;
@@ -246,6 +258,16 @@
 }
 
 .page-footer__htmlacademy-image {
+  fill: @c-special-grey-2;
+
+  &:hover {
+    fill: @c-basic-green;
+  }
+
+  &:active {
+    fill: @c-basic-green;
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: 23px;
   }
@@ -309,8 +331,22 @@
   }
 }
 
+.page-footer__social {
+  fill: @c-special-grey-2;
+}
+
 .page-footer__social--facebook {
   fill: transparent;
+  stroke: @c-special-grey-2;
+
+  &:hover {
+    stroke: @c-basic-green;
+  }
+
+  &:active {
+    stroke: @c-basic-green;
+    opacity: 0.3;
+  }
 
   @media (max-width: @mobile-width-only) {
     width: 22px;
@@ -324,7 +360,14 @@
 }
 
 .page-footer__social--instagram {
-  fill: transparent;
+  &:hover {
+    fill: @c-basic-green;
+  }
+
+  &:active {
+    fill: @c-basic-green;
+    opacity: 0.3;
+  }
 
   @media (max-width: @mobile-width-only) {
     width: 16px;
@@ -338,7 +381,14 @@
 }
 
 .page-footer__social--vk {
-  fill: transparent;
+  &:hover {
+    fill: @c-basic-green;
+  }
+
+  &:active {
+    fill: @c-basic-green;
+    opacity: 0.3;
+  }
 
   @media (max-width: @mobile-width-only) {
     width: 23px;
@@ -366,8 +416,6 @@
 }
 
 .page-footer__link--instagram {
-  fill: transparent;
-
   @media (max-width: @mobile-width-only) {
     width: 16px;
     height: 16px;
@@ -380,8 +428,6 @@
 }
 
 .page-footer__link--vk {
-  fill: transparent;
-
   @media (max-width: @mobile-width-only) {
     width: 23px;
     height: 16px;
