@@ -71,8 +71,13 @@
     &:last-child {
       display: grid;
       align-items: end;
-      margin-bottom: 60px;
     }
+  }
+}
+
+.catalog__wrapper--more {
+  @media (min-width: @tablet-width) {
+    padding-top: 93px;
   }
 }
 
@@ -101,8 +106,10 @@
     padding-left: 30px;
     padding-right: 30px;
     column-gap: 60px;
+    grid-row-gap: 60px;
     width: 768px;
     margin: 0 auto;
+    margin-bottom: 68px;
   }
 
   @media (min-width: @full-tablet-width) {
@@ -113,6 +120,7 @@
     column-gap: 30px;
     width: 1100px;
     margin: 0 auto;
+    margin-bottom: 68px;
   }
 
   @media (min-width: @desktop-width) {
@@ -123,5 +131,6 @@
     column-gap: 80px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 76px;
   }
 }

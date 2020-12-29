@@ -37,7 +37,7 @@
     padding-left: 78px;
     padding-right: 124px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
 
@@ -45,7 +45,7 @@
       background-image: url("../img/gift-photo-tablet-2x.png");
     }
 
-    &::before {
+    &::after {
       content: "";
       width: 80px;
       height: 82px;
@@ -59,7 +59,7 @@
     min-height: 289px;
     background-image: url("../img/gift-photo-desktop.png");
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     justify-content: center;
     padding: 10px 0;
@@ -68,9 +68,9 @@
       background-image: url("../img/gift-photo-desktop-2x.png");
     }
 
-    &::before {
+    &::after {
       margin: 0 auto;
-      margin-bottom: 46px;
+      margin-bottom: 47px;
     }
   }
 }

@@ -65,8 +65,15 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 161px;
-    min-height: 430px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 448px;
+    height: 100%;
     border: 2px solid @c-basic-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &::after {
       content: "";
