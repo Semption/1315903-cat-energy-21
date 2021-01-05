@@ -189,6 +189,14 @@
   padding: 15px 20px;
   width: 100%;
 
+  &:hover {
+    border: 1px solid @c-special-grey;
+  }
+
+  &:focus {
+    border: 1px solid @c-dark-grey;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -205,6 +213,14 @@
   border: 1px solid @c-input-border;
   padding-left: 10px;
   padding-right: 10px;
+
+  &:hover {
+    border: 1px solid @c-special-grey;
+  }
+
+  &:focus {
+    border: 1px solid @c-dark-grey;
+  }
 
   @media (max-width: @mobile-width-only) {
     width: 100%;
@@ -338,6 +354,7 @@
   }
 }
 
+
 .selection__email {
   font-size: 16px;
   line-height: 18px;
@@ -345,6 +362,19 @@
   height: 45px;
   text-transform: uppercase;
   color: @c-dark-grey;
+
+  &:hover {
+    border: 1px solid @c-special-grey;
+  }
+
+  &:focus {
+    border: 1px solid @c-dark-grey;
+  }
+
+  &:disabled {
+    border: 1px solid @c-dark-grey;
+    background-color: @c-white;
+  }
 
   @media (max-width: @mobile-width-only) {
     padding: 10px 20px;
@@ -364,6 +394,11 @@
   }
 }
 
+.selection__email:disabled + .selection__icon-email {
+  stroke: @c-basic-green;
+  fill: @c-basic-green;
+}
+
 .selection__phone {
   font-size: 16px;
   line-height: 18px;
@@ -371,6 +406,19 @@
   height: 45px;
   text-transform: uppercase;
   color: @c-dark-grey;
+
+  &:hover {
+    border: 1px solid @c-special-grey;
+  }
+
+  &:focus {
+    border: 1px solid @c-dark-grey;
+  }
+
+  &:disabled {
+    border: 1px solid @c-dark-grey;
+    background-color: @c-white;
+  }
 
   @media (max-width: @mobile-width-only) {
     padding: 10px 20px;
@@ -388,6 +436,10 @@
   @media (min-width: @desktop-width) {
     width: 100%;
   }
+}
+
+.selection__phone:disabled + .selection__icon-phone {
+  stroke: @c-basic-green;
 }
 
 .selection__comment-wrapper {
@@ -432,6 +484,14 @@
   padding: 10px;
   margin: 0;
   width: 100%;
+
+  &:hover {
+    border: 1px solid @c-special-grey;
+  }
+
+  &:focus {
+    border: 1px solid @c-dark-grey;
+  }
 
   @media (max-width: @mobile-width-only) {
     padding: 15px 15px;
