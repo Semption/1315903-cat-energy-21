@@ -1,7 +1,103 @@
 .products-more__name {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: @c-light-black;
   text-transform: uppercase;
   font-weight: 400;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+}
+
+.products-more__taste {
+  color: @c-dark-grey;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: @mobile-width-only) {
+    width: 221px;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 87px;
+  }
+}
+
+.products-more {
+  width: 320px;
+  padding: 25px 20px;
+  text-align: center;
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 81px;
+
+    &::after {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/plus.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: block;
+      position: absolute;
+      top: 28px;
+      left: 135px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    padding: 81px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 161px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 448px;
+    height: 100%;
+    border: 2px solid @c-basic-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/plus.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: block;
+      position: absolute;
+      top: 52px;
+      left: calc(~"50% - "30px);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }

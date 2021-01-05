@@ -14,7 +14,6 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 110px;
   }
 }
 
@@ -33,7 +32,9 @@
     font-size: 18px;
     line-height: 24px;
     margin-right: 35px;
+    padding-bottom: 8px;
     border: none;
+    margin-bottom: 10px;
 
     &:last-child {
       margin-right: 0;
@@ -48,11 +49,21 @@
 }
 
 .navigation-list__item:last-child {
-  border-top: 1px solid @c-border-menu;
-  border-bottom: 1px solid @c-border-menu;
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @c-border-menu;
+    border-bottom: 1px solid @c-border-menu;
+  }
+}
 
+.navigation-list__item--active {
   @media (min-width: @tablet-width) {
-    border: none;
+    border-bottom: 2px solid @c-basic-green;
+  }
+}
+
+.navigation-list__item--main {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @c-white;
   }
 }
 
@@ -61,6 +72,15 @@
   display: block;
   text-decoration: none;
   word-break: break-all;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 
   @media (max-width: @mobile-width-only) {
     padding: 22px 20px;
