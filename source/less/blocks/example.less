@@ -13,11 +13,24 @@
   @media (min-width: @desktop-width) {
     padding-top: 0;
     padding-bottom: 75px;
-    background-image: linear-gradient(to bottom, @c-white 194px, @c-basic-grey 0);
+    background-image: none;
+    background-color: @c-basic-grey;
   }
 
   @media (min-width: @full-width) {
     display: block;
+  }
+}
+
+.example--before {
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(to right, @c-basic-grey 30%, @c-light-grey 50%);
+  }
+}
+
+.example--after {
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(to right, @c-basic-grey 100%, @c-light-grey);
   }
 }
 
@@ -213,9 +226,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: linear-gradient(to bottom, @c-white 194px, @c-basic-grey 0);
+    background: none;
     margin: 0;
     padding: 0;
+    margin-top: -194px;
   }
 }
 
@@ -224,6 +238,7 @@
     position: relative;
     padding-right: 110px;
     padding-top: 58px;
+    margin-top: -194px;
   }
 }
 
