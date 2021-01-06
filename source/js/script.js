@@ -8,9 +8,9 @@ let sliderBar = document.querySelector(".slider__bar");
 let sliderToggle = document.querySelector(".slider__toggle");
 let beforeButton = document.querySelector(".slider__button--before");
 let afterButton = document.querySelector(".slider__button--after");
-example.classList.add("example--before");
 
 if (slider) {
+  example.classList.add("example--before");
   afterButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     beforeSlide.classList.remove("slider__item--current");
@@ -57,6 +57,9 @@ openMenu.addEventListener("click", function (evt) {
 //Form
 
 let mainForm = document.querySelector(".selection__form");
+
+if(mainForm) {
+
 let buttonSend = document.querySelector(".selection__submit");
 let namefield = mainForm.querySelector("input#name-field");
 let weightfield = mainForm.querySelector("input#weight-field");
@@ -75,3 +78,4 @@ var requiredField = [namefield,weightfield,emailfield,phonefield];
       }
     }
   })
+}
