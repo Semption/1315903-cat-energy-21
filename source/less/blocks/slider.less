@@ -124,6 +124,22 @@
   border: 1px solid @c-special-grey;
   border-radius: 10px;
 
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 100%;
+
+    &--before {
+      justify-content: flex-start;
+    }
+
+    &--after {
+      justify-content: flex-end;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     height: 6px;
     background-color: @c-dark-grey;
@@ -135,8 +151,8 @@
 .slider__bar {
   width: 35px;
   height: 6px;
-  margin: 3px 43px 0 4px;
   background-color: @c-basic-green;
+  border: 0;
   border-radius: 5px;
 
   @media (min-width: @tablet-width) {
