@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -30,7 +30,7 @@
           <img class="page-header__logo-main" src="img/logo-mobile-main.svg" width="190" height="38" alt="Основной логотип Cat Energy">
         </picture>
         </a>
-        <button class="page-header__toggle page-header__toggle--closed">
+        <button class="page-header__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -106,32 +106,30 @@
             <p class="progress__cost-description">Затраты на питание:<span class="progress__divider"></span> 15&nbsp;000&nbsp;руб.</p>
             </div>
           </div>
-          <div class="example__result slider">
-            <div class="slider__wrapper">
-              <ul class="slider__list">
-                <li class="slider__item slider__item--before slider__item--current">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
-                    <img class="slider__photo slider__photo--before" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Результат до">
-                  </picture>
-                </li>
-                <li class="slider__item slider__item--after">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
-                    <img class="slider__photo slider__photo--after" src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png 2x" width="280" height="267" alt="Результат после">
-                  </picture>
-                </li>
-              </ul>
-              <div class="slider__range">
-                <button class="slider__button slider__button--before slider__button--active">Было</button>
-                <div class="slider__controls">
-                  <div class="slider__scale">
-                    <button class="slider__bar"></button>
-                  </div>
-                  <div class="slider__toggle" tabindex="0"></div>
+          <div class="example__result example__result--before slider">
+            <ul class="slider__list">
+              <li class="slider__item slider__item--before slider__item--current">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
+                  <img class="slider__photo slider__photo--before" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Результат до">
+                </picture>
+              </li>
+              <li class="slider__item slider__item--after">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+                  <img class="slider__photo slider__photo--after" src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png 2x" width="280" height="267" alt="Результат после">
+                </picture>
+              </li>
+            </ul>
+            <div class="slider__range">
+              <button class="slider__button slider__button--before slider__button--active">Было</button>
+              <div class="slider__controls">
+                <div class="slider__scale">
+                  <button class="slider__bar"></button>
                 </div>
-                <button class="slider__button slider__button--after">Стало</button>
+                <div class="slider__toggle" tabindex="0"></div>
               </div>
+              <button class="slider__button slider__button--after">Стало</button>
             </div>
           </div>
         </div>
@@ -151,12 +149,11 @@
       </div>
       <div class="page-footer__map-layer">
         <picture class="page-footer__map-row">
-          <source media="(min-width: 1440px)" srcset="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          <source media="(min-width: 768px)" srcset="img/map-768.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width: 1440px)" srcset="img/map.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-768.jpg">
           <img class="page-footer__image-map" src="img/map-320.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
         </picture>
         <iframe src="https://yandex.ru/map-widget/v1/-/CCUIQTdIcC" width="320" height="400" class="page-footer__yamaps-iframe">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </iframe>
         <picture>
           <source media="(min-width: 768px)" srcset="img/map-pin-d.png 1x, img/map-pin-d@2x.png 2x">
