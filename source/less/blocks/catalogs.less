@@ -128,6 +128,7 @@
   line-height: 37px;
   font-weight: 400;
   word-break: break-word;
+  text-transform: uppercase;
 
   @media (max-width: @mobile-width-only) {
     margin-bottom: 30px;
@@ -136,12 +137,25 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    text-transform: uppercase;
     margin-bottom: 24px;
   }
 }
 
 .catalogs__title--losing {
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 50px;
+      height: 53px;
+      background-image: url("../img/cat-back-losing.svg");
+      background-repeat: no-repeat;
+      background-size: 50px 53px;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     &::before {
       content: "";
@@ -158,6 +172,20 @@
 }
 
 .catalogs__title--weight {
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 67px;
+      height: 50px;
+      background-image: url("../img/cat-back-weight.svg");
+      background-repeat: no-repeat;
+      background-size: 67px 50px;
+      margin-right: 11px;
+      vertical-align: middle;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     &::before {
       content: "";
