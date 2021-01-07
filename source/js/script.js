@@ -1,3 +1,8 @@
+//Map
+
+let iframeMaps = document.querySelector(".page-footer__yamaps-iframe");
+iframeMaps.classList.remove("page-footer__nojs");
+
 // Slider
 let example = document.querySelector(".example");
 let exampleResult = document.querySelector(".example__result");
