@@ -44,12 +44,12 @@ ymaps.ready(function () {
       });
 
 
-   if(window.innerWidth < 768) {
+  if(window.innerWidth < 768) {
     myMap.geoObjects
     .add(myPlacemarkMobile);
-   }
-     else {
+  }
+    else {
       myMap.geoObjects
       .add(myPlacemark);
-     }
+    }
 });
