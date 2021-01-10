@@ -10,7 +10,6 @@ let slider = document.querySelector(".slider");
 let currentSlider = document.querySelector(".slider__item");
 let beforeSlide = document.querySelector(".slider__item--before");
 let afterSlide = document.querySelector(".slider__item--after");
-let sliderBar = document.querySelector(".slider__bar");
 let sliderScale = document.querySelector(".slider__scale");
 let sliderToggle = document.querySelector(".slider__toggle");
 let beforeButton = document.querySelector(".slider__button--before");
@@ -52,24 +51,28 @@ if (slider) {
   })
 
 
-  sliderBar.addEventListener("click", function (evt) {
+  sliderToggle.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (sliderBar && sliderScale.classList.contains("slider__scale--before")) {
-          beforeSlide.classList.remove("slider__item--current");
-          afterSlide.classList.add("slider__item--current");
-          example.classList.remove("example--before");
-          example.classList.add("example--after");
-          sliderScale.classList.remove("slider__scale--before");
-          sliderScale.classList.add("slider__scale--after");
-          sliderToggle.style.left = "95%";
+    if (sliderToggle && sliderScale.classList.contains("slider__scale--before")) {
+        beforeSlide.classList.remove("slider__item--current");
+        afterSlide.classList.add("slider__item--current");
+        example.classList.remove("example--before");
+        example.classList.add("example--after");
+        sliderScale.classList.remove("slider__scale--before");
+        sliderScale.classList.add("slider__scale--after");
+        exampleResult.classList.remove("example__result--before");
+        exampleResult.classList.add("example__result--after");
+        sliderToggle.style.left = "95%";
     } else {
-      afterSlide.classList.remove("slider__item--current");
-      beforeSlide.classList.add("slider__item--current");
-      example.classList.remove("example--after");
-      example.classList.add("example--before");
-      sliderScale.classList.remove("slider__scale--after");
-      sliderScale.classList.add("slider__scale--before");
-      sliderToggle.style.left = "0%";
+        afterSlide.classList.remove("slider__item--current");
+        beforeSlide.classList.add("slider__item--current");
+        example.classList.remove("example--after");
+        example.classList.add("example--before");
+        sliderScale.classList.remove("slider__scale--after");
+        sliderScale.classList.add("slider__scale--before");
+        exampleResult.classList.remove("example__result--after");
+        exampleResult.classList.add("example__result--before");
+        sliderToggle.style.left = "0%";
     }
   })
 }

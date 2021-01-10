@@ -169,16 +169,11 @@
         </div>
       </div>
       <div class="page-footer__map-layer">
+        <div class="page-footer__yamaps-iframe page-footer__nojs" id="map"></div>
         <picture class="page-footer__map-row">
-          <source media="(min-width: 1440px)" srcset="img/map.jpg" class="page-footer__image-map">
-          <source media="(min-width: 768px)" srcset="img/map-768.jpg" class="page-footer__image-map">
-          <img src="img/map-320.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="page-footer__image-map" width="320" height="362">
-        </picture>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCUIQTdIcC" width="320" height="400" class="page-footer__yamaps-iframe page-footer__nojs">
-        </iframe>
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/map-pin-d.png 1x, img/map-pin-d@2x.png 2x">
-          <img class="page-footer__map-pin" src="img/map-pin.png" srcset="img/map-pin@2x.png 2x" alt="Мы находимся здесь!">
+          <source media="(min-width: 1440px)" srcset="img/map.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-768.jpg">
+          <img class="page-footer__image-map" src="img/map-320.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
         </picture>
       </div>
       <div class="page-footer__objects container">
@@ -218,5 +213,7 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=277493b3-67e5-4a27-8fda-77a9d252972c" type="text/javascript"></script>
+    <script src="js/icon_customImage.js" type="text/javascript"></script>
   </body>
 </html>

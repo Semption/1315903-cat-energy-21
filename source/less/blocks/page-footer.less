@@ -59,7 +59,7 @@
     min-height: 201px;
     position: absolute;
     background-color: @c-white;
-    z-index: 1;
+    z-index: 3;
     left: 110px;
     top: calc(~"50% - "@cooperation-full);
     display: flex;
@@ -168,9 +168,11 @@
   position: relative;
   border: 0;
   width: 100%;
+  min-height: 400px;
+  z-index: 2;
 
   @media (max-width: @mobile-width-only) {
-    height: 362px;
+    min-height: 362px;
 
     &::after {
       content: "";
@@ -180,7 +182,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 2;
     }
   }
 
