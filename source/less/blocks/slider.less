@@ -7,7 +7,7 @@
 
   @media (min-width: @tablet-width) {
     min-height: 515px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
     position: relative;
   }
 
@@ -20,6 +20,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .slider__item {
@@ -72,6 +76,14 @@
   @media (min-width: @desktop-width) {
     width: 610px;
   }
+}
+
+.slider__button--after {
+  margin-right: 3px;
+}
+
+.slider__button--before {
+  margin-left: 1px;
 }
 
 .slider__button {
