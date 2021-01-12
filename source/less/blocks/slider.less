@@ -83,11 +83,23 @@
 }
 
 .slider__button--after {
-  margin-right: 1px;
+  @media (min-width: @tablet-width) {
+    margin-right: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 1px;
+  }
 }
 
 .slider__button--before {
-  margin-left: 38px;
+  @media (min-width: @tablet-width) {
+    margin-left: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 38px;
+  }
 }
 
 .slider__button {
