@@ -43,7 +43,6 @@ ymaps.ready(function () {
           iconImageOffset: [-15, -48]
       });
 
-
   if(window.innerWidth < 768) {
     myMap.geoObjects
     .add(myPlacemarkMobile);

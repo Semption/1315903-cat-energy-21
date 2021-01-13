@@ -186,14 +186,14 @@
 }
 
 .page-footer__yamaps-iframe {
-  position: relative;
+  position: absolute;
   border: 0;
   width: 100%;
-  min-height: 400px;
+  height: 362px;
   z-index: 2;
 
   @media (max-width: @mobile-width-only) {
-    min-height: 362px;
+    width: 100%;
 
     &::after {
       content: "";
@@ -204,6 +204,14 @@
       top: 0;
       left: 0;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -371,10 +379,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-height: 396px;
-  }
-
-  @media (min-width: @desktop-width) {
     min-height: 400px;
   }
 }
