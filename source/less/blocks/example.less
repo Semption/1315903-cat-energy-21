@@ -2,7 +2,10 @@
   background-color: @c-light-grey;
 
   @media (max-width: @mobile-width-only) {
-    padding: 25px 0;
+    padding-top: 28px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 25px;
   }
 
   @media (min-width: @tablet-width) {
@@ -12,8 +15,9 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
-    padding-bottom: 75px;
-    background-image: linear-gradient(to bottom, @c-white 194px, @c-basic-grey 0);
+    padding-bottom: 67px;
+    background-image: none;
+    background-color: @c-basic-grey;
   }
 
   @media (min-width: @full-width) {
@@ -21,9 +25,21 @@
   }
 }
 
+.example--before {
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(to right, @c-basic-grey 100%, @c-light-grey);
+  }
+}
+
+.example--after {
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(to right, @c-basic-grey 50%, @c-light-grey 50%);
+  }
+}
+
 .example__wrapper {
   @media (min-width: @desktop-width) {
-    padding-right: 140px;
+    padding-right: 110px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,13 +61,13 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 146px;
+    margin-bottom: 148px;
     padding: 0;
   }
 }
@@ -66,13 +82,19 @@
   padding: 0;
 
   @media (max-width: @mobile-width-only) {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
+    word-break: break-word;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 87%;
+    margin-bottom: 68px;
   }
 }
 
@@ -189,7 +211,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 59px;
+    margin-bottom: 71px;
     flex-basis: 100%;
   }
 
@@ -210,12 +232,24 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
+
+    &--after {
+      margin-top: -49px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    background: linear-gradient(to bottom, @c-white 194px, @c-basic-grey 0);
+    background: none;
     margin: 0;
     padding: 0;
+
+    &--before {
+      margin-top: -133px;
+    }
+
+    &--after {
+      margin-top: -182px;
+    }
   }
 }
 
@@ -224,6 +258,7 @@
     position: relative;
     padding-right: 110px;
     padding-top: 58px;
+    margin-top: -196px;
   }
 }
 

@@ -4,14 +4,14 @@
   padding: 0;
 
   @media (max-width: @mobile-width-only) {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
     position: relative;
-    padding-bottom: 44px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: @tablet-width) {
     background-color: @c-white;
-    padding-top: 60px;
+    padding-top: 31px;
   }
 
   @media (min-width: @desktop-width) {
@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 0;
-    margin-top: -165px;
+    margin-top: -66px;
     z-index: 2;
     margin-bottom: 82px;
   }
@@ -30,10 +30,10 @@
     background-color: rgba(104, 183, 56, 0.85);
     background-image: url("../img/cat-mobile-green.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: @c-white;
     min-height: 302px;
-    padding: 30px 20px 120px 20px;
+    padding: 27px 20px 120px 20px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-mobile-green-2x.jpg");
@@ -41,18 +41,19 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 117px;
+    padding-left: 112px;
     margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
     padding-left: 190px;
-    padding-top: 223px;
+    padding-top: 122px;
   }
 
   @media (min-width: 1920px) {
     margin-left: auto;
+    padding-right: 290px;
   }
 }
 
@@ -69,11 +70,12 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 504px;
+    width: 450px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 41px;
+    margin-left: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -94,6 +96,7 @@
 
   @media (max-width: @mobile-width-only) {
     margin-bottom: 29px;
+    margin-right: 2px;
   }
 
   @media (min-width: @tablet-width) {
@@ -101,7 +104,16 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 39px;
+    margin-bottom: 49px;
+    margin-left: 5px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 450px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-bottom: 52px;
   }
 }
 
@@ -115,17 +127,19 @@
   }
 
   @media (min-width: @tablet-width) {
-    position: static;
+    position: relative;
+    z-index: 2;
   }
 }
 
 .program-selection__other-items {
   @media (max-width: @mobile-width-only) {
-    margin-top: -130px;
+    margin-top: -135px;
   }
 
   @media (min-width: @tablet-width) {
     position: relative;
+    margin-top: -103px;
   }
 
   @media (min-width: @desktop-width) {
@@ -165,7 +179,7 @@
     height: 499px;
     position: absolute;
     display: block;
-    top: 130px;
-    left: -160px;
+    top: 143px;
+    left: -162px;
   }
 }

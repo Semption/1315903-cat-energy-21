@@ -26,15 +26,20 @@
 
   @media (max-width: @mobile-width-only) {
     width: 100%;
+    padding-bottom: 1px;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    margin-right: 35px;
-    padding-bottom: 8px;
+    margin-right: 36px;
+    padding-bottom: 9px;
     border: none;
     margin-bottom: 10px;
+
+    &:first-child {
+      margin-right: 35px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -45,6 +50,14 @@
     font-size: 18px;
     line-height: 24px;
     border: none;
+    padding-bottom: 7px;
+    margin-bottom: 14px;
+    margin-right: 34px;
+
+    &:first-child {
+      margin-right: 36px;
+      margin-top: 1px;
+    }
   }
 }
 
@@ -83,6 +96,9 @@
 
 
   @media (max-width: @mobile-width-only) {
+    font-family: "Oswald Medium", "Arial", serif;
+    font-size: 20px;
+    line-height: 20px;
     padding: 22px 20px;
   }
 
@@ -95,4 +111,9 @@
 
 .navigation-list__link--formpage {
   color: @c-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -2px;
+    margin-left: 1px;
+  }
 }

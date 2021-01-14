@@ -11,10 +11,12 @@
   color: @c-dark-grey;
   order: 2;
   align-self: center;
-  margin-top: -7px;
+  margin-top: -11px;
 
   @media (max-width: @mobile-width-only) {
     width: 87px;
+    padding-left: 13px;
+    margin-top: -9px;
   }
 
   @media (min-width: @tablet-width) {
@@ -23,6 +25,7 @@
     background-color: @c-white;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 3px;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,10 +71,10 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 29px;
     width: 25%;
     text-align: right;
-    padding-top: 15px;
+    padding-top: 7px;
   }
 
   @media (min-width: @desktop-width) {
@@ -92,7 +95,7 @@
   @media (max-width: @mobile-width-only) {
     justify-content: center;
     align-items: center;
-    margin-bottom: 26px;
+    margin-bottom: 9px;
   }
 
   @media (min-width: @tablet-width) {
@@ -103,7 +106,7 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
 }
 
@@ -134,5 +137,7 @@
 }
 
 .progress__divider {
-  margin-right: 63px;
+  @media (min-width: @desktop-width) {
+    margin-right: 59px;
+  }
 }
