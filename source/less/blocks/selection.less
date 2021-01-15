@@ -1,5 +1,9 @@
 .selection {
   padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 33px;
+  }
 }
 
 .selection__first-group {
@@ -11,7 +15,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 71px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,7 +57,7 @@
   @media (min-width: @tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
-    margin-bottom: 34px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: @desktop-width) {
@@ -96,6 +100,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -134,7 +139,7 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 70px;
-    padding-right: 70px;
+    padding-right: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -177,6 +182,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 19px;
   }
 }
 
@@ -184,12 +190,24 @@
   margin-bottom: 7px;
   margin-left: -1px;
   margin-right: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 19px;
+    margin-bottom: 0;
+    margin-left: 1px;
+  }
 }
 
 .selection__label--phone {
   margin-bottom: 7px;
   margin-left: -1px;
   margin-right: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -2px;
+    margin-left: -2px;
+    margin-right: 16px;
+  }
 }
 
 .selection__text {
@@ -213,6 +231,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 15px 15px;
     height: 52px;
   }
 }
@@ -283,8 +302,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 69px;
+    padding-right: 66px;
     margin-bottom: 72px;
     border: 0;
   }
@@ -362,6 +381,7 @@
 
     @media (min-width: @tablet-width) {
       width: 100%;
+      top: 22px;
     }
   }
 
@@ -402,7 +422,7 @@
     line-height: 24px;
     padding: 17px 20px;
     width: 100%;
-    height: 50px;
+    height: 51px;
   }
 
   @media (min-width: @desktop-width) {
@@ -446,7 +466,7 @@
     line-height: 24px;
     padding: 17px 20px;
     width: 100%;
-    height: 50px;
+    height: 52px;
   }
 
   @media (min-width: @desktop-width) {
@@ -477,6 +497,7 @@
 
     @media (min-width: @tablet-width) {
       width: 100%;
+      top: 23px;
     }
   }
 
@@ -485,7 +506,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: @desktop-width) {
@@ -519,7 +540,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 15px 20px;
+    padding: 10px 18px;
     font-size: 20px;
     line-height: 30px;
     min-height: 174px;
@@ -556,6 +577,7 @@
 
     @media (min-width: @tablet-width) {
       width: 100%;
+      top: 22px;
     }
   }
 }
@@ -588,6 +610,7 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
+    padding-top: 2px;
   }
 }
 
@@ -674,6 +697,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -686,6 +710,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
     margin: 0 30px;
     padding: 0 40px;
     justify-items: left;
@@ -710,7 +735,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 70px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -745,6 +770,11 @@
   right: 15px;
   top: calc(~"50% - "6px);
   stroke: @c-dark-grey-2;
+
+  @media (min-width: @tablet-width) {
+    right: 19px;
+    top: calc(~"50% - "7px);
+  }
 }
 
 .selection__icon-phone {
@@ -756,11 +786,19 @@
   top: calc(~"50% - "10px);
   stroke: transparent;
   fill: @c-black;
+
+  @media (min-width: @tablet-width) {
+    right: 18px;
+    top: calc(~"50% - "8px);
+  }
 }
 
 .selection__wrapper--email {
   position: relative;
-  padding-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .selection__wrapper--phone {
