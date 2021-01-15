@@ -7,7 +7,7 @@
   margin: 0 auto;
 
   @media (max-width: @mobile-width-only) {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @tablet-width) {
@@ -107,7 +107,7 @@
 .selection__wrapper {
   margin-top: 0;
   padding: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12.7px;
   display: flex;
   align-items: center;
 
@@ -156,6 +156,7 @@
   @media (max-width: @mobile-width-only) {
     margin-left: 20px;
     margin-right: 20px;
+    width: 85%;
   }
 
   @media (min-width: @tablet-width) {
@@ -171,12 +172,24 @@
   color: @c-dark-grey;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-right: 10px;
+  margin-right: 15px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.selection__label--email {
+  margin-bottom: 7px;
+  margin-left: -1px;
+  margin-right: 11px;
+}
+
+.selection__label--phone {
+  margin-bottom: 7px;
+  margin-left: -1px;
+  margin-right: 9px;
 }
 
 .selection__text {
@@ -186,7 +199,7 @@
   color: @c-dark-grey;
   height: 46px;
   border: 1px solid @c-input-border;
-  padding: 15px 20px;
+  padding: 15px 13px;
   width: 100%;
 
   &:hover {
@@ -211,8 +224,8 @@
   color: @c-dark-grey;
   height: 46px;
   border: 1px solid @c-input-border;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
 
   &:hover {
     border: 1px solid @c-special-grey;
@@ -263,8 +276,8 @@
   border: 0;
 
   @media (max-width: @mobile-width-only) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 17px;
+    padding-right: 18px;
     padding-bottom: 24px;
     border-bottom: 1px solid @c-border-footer;
   }
@@ -290,7 +303,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @c-dark-grey-2;
-  padding: 20px 0;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0;
   border: 0;
   border-bottom: 1px solid @c-border-footer;
@@ -327,7 +343,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   position: relative;
 
   &::after {
@@ -377,7 +393,7 @@
   }
 
   @media (max-width: @mobile-width-only) {
-    padding: 10px 20px;
+    padding: 10px 15px;
     width: 100%;
   }
 
@@ -421,7 +437,7 @@
   }
 
   @media (max-width: @mobile-width-only) {
-    padding: 10px 20px;
+    padding: 10px 17px;
     width: 100%;
   }
 
@@ -465,7 +481,7 @@
   }
 
   @media (max-width: @mobile-width-only) {
-    margin-bottom: 34px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: @tablet-width) {
@@ -494,7 +510,11 @@
   }
 
   @media (max-width: @mobile-width-only) {
-    padding: 15px 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 15px;
+    padding-right: 14px;
+    letter-spacing: 0.9px;
     min-height: 150px;
   }
 
@@ -593,7 +613,7 @@
 .selection__header-contact {
   padding: 0;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   width: 200px;
 
   @media (min-width: @tablet-width) {
@@ -609,7 +629,7 @@
 
 .selection__header-comment {
   width: 140px;
-  margin-bottom: 34px;
+  margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
     padding-left: 40px;
@@ -740,6 +760,7 @@
 
 .selection__wrapper--email {
   position: relative;
+  padding-top: 4px;
 }
 
 .selection__wrapper--phone {
