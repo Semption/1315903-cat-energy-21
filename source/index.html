@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -47,10 +47,13 @@
         <div class="program-selection__banner">
             <h1 class="program-selection__title">Функциональное питание для котов</h1>
             <p class="program-selection__description">Занялся собой? Займись котом!</p>
-            <a href="#" class="program-selection__button button">Подобрать программу</a>
+            <a href="form.html" class="program-selection__button button">Подобрать программу</a>
         </div>
         <div class="program-selection__other-items">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/main-image-desktop.webp 1x, img/main-image-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/main-image-tablet.webp 1x, img/main-image-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-image.webp 1x, img/main-image@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/main-image-desktop.png 1x, img/main-image-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/main-image-tablet.png 1x, img/main-image-tablet@2x.png 2x">
             <img class="program-selection__promo-image" src="img/main-image.png" srcset="img/main-image@2x.png 2x"  width="280" height="270" alt="Пример отображения упаковки обеда">
@@ -110,12 +113,16 @@
             <ul class="slider__list">
               <li class="slider__item slider__item--before slider__item--current">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-fat-mobile.webp 1x, img/cat-fat-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
                   <img class="slider__photo slider__photo--before" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Результат до">
                 </picture>
               </li>
               <li class="slider__item slider__item--after">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-skinny-mobile.webp 1x, img/cat-skinny-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
                   <img class="slider__photo slider__photo--after" src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png 2x" width="280" height="267" alt="Результат после">
                 </picture>
@@ -149,6 +156,9 @@
       <div class="page-footer__map-layer">
         <div class="page-footer__yamaps-iframe page-footer__nojs" id="map"></div>
         <picture class="page-footer__map-row">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map.webp">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-768.webp">
+          <source type="image/webp" srcset="img/map-320.webp">
           <source media="(min-width: 1440px)" srcset="img/map.jpg">
           <source media="(min-width: 768px)" srcset="img/map-768.jpg">
           <img class="page-footer__image-map" src="img/map-320.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
@@ -190,8 +200,7 @@
         </a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=277493b3-67e5-4a27-8fda-77a9d252972c" type="text/javascript"></script>
-    <script src="js/icon_customImage.js" type="text/javascript"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
