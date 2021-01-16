@@ -158,6 +158,14 @@
     opacity: 0.3;
   }
 
+  &:hover {
+    color: @c-basic-green;
+
+    .page-footer__htmlacademy-image {
+      fill: @c-basic-green;
+    }
+  }
+
   @media (max-width: @mobile-width-only) {
     display: flex;
     justify-content: space-between;
@@ -191,19 +199,11 @@
   width: 100%;
   height: 362px;
   z-index: 2;
+  top: 0;
+  left: 0;
 
   @media (max-width: @mobile-width-only) {
     width: 100%;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 57px;
-      height: 53px;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
   }
 
   @media (min-width: @tablet-width) {
@@ -217,8 +217,6 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     display: block;
-    top: 0;
-    left: 0;
   }
 }
 
@@ -237,7 +235,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 51px;
+    padding-top: 55px;
     padding-bottom: 60px;
     align-items: center;
   }
@@ -336,14 +334,6 @@
 .page-footer__htmlacademy-image {
   fill: @c-special-grey-2;
 
-  &:hover {
-    fill: @c-basic-green;
-  }
-
-  &:active {
-    fill: @c-basic-green;
-  }
-
   @media (min-width: @tablet-width) {
     margin-left: 23px;
   }
@@ -365,6 +355,7 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
+    left: 0;
     top: 0;
     min-height: 400px;
   }
@@ -381,6 +372,13 @@
   @media (min-width: @tablet-width) {
     min-height: 400px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .page-footer__map-row {
@@ -389,12 +387,14 @@
   @media (max-width: 767px) {
     position: absolute;
     top: 0;
+    left: 0;
     display: block;
   }
 
   @media (min-width: @tablet-width) and (max-width: 1439px) {
     position: absolute;
     top: 0;
+    left: 0;
     display: block;
   }
 
@@ -528,4 +528,13 @@
 
 .page-footer__nojs {
   display: none;
+}
+
+.page-footer__cooperation-wrapper {
+  @media (min-width: @desktop-width) {
+    max-width: 1920px;
+    min-height: 400px;
+    position: relative;
+    margin: 0 auto;
+  }
 }

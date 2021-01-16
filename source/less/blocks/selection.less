@@ -63,7 +63,7 @@
   @media (min-width: @tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
-    margin-bottom: 21px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
@@ -134,6 +134,7 @@
 
 .selection__wrapper--variant {
   margin-bottom: 13px;
+  position: relative;
 }
 
 .selection__container {
@@ -408,7 +409,6 @@
   }
 }
 
-
 .selection__email {
   font-size: 16px;
   line-height: 18px;
@@ -431,14 +431,20 @@
   }
 
   @media (max-width: @mobile-width-only) {
-    padding: 10px 15px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 15px;
     width: 100%;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    padding: 17px 20px;
+    padding-top: 17px;
+    padding-right: 50px;
+    padding-bottom: 17px;
+    padding-left: 20px;
     width: 100%;
     height: 51px;
   }
@@ -446,6 +452,10 @@
   @media (min-width: @desktop-width) {
     width: 100%;
     padding: 15px 19px;
+    padding-top: 17px;
+    padding-right: 50px;
+    padding-bottom: 17px;
+    padding-left: 19px;
   }
 }
 
@@ -476,21 +486,30 @@
   }
 
   @media (max-width: @mobile-width-only) {
-    padding: 10px 17px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 17px;
     width: 100%;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    padding: 17px 20px;
+    padding-top: 17px;
+    padding-right: 50px;
+    padding-bottom: 17px;
+    padding-left: 20px;
     width: 100%;
     height: 52px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    padding: 17px 18px;
+    padding-top: 17px;
+    padding-right: 50px;
+    padding-bottom: 17px;
+    padding-left: 18px;
   }
 }
 
@@ -690,12 +709,22 @@
 
 .selection__radio {
   margin-right: 10px;
-  display: none;
 }
 
 .selection__checkbox {
   margin-right: 10px;
-  display: none;
+}
+
+.selection__radio:focus + .selection__radio-label::before {
+  box-shadow: 0 0 0 3px @c-basic-green;
+}
+
+.selection__checkbox:focus + .selection__checkbox-label::before {
+  box-shadow: 0 0 0 3px @c-basic-green;
+}
+
+.selection__checkbox:active + .selection__checkbox-label::before {
+  box-shadow: 0 0 0 3px @c-basic-green;
 }
 
 .selection__checkbox-label {
@@ -721,6 +750,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
+    grid-row-gap: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -728,6 +758,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 80px;
     margin-bottom: 61px;
+    grid-row-gap: 20px;
   }
 }
 
@@ -766,24 +797,6 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 110px;
-  }
-}
-
-.page-footer__cooperation-wrapper {
-  @media (min-width: @desktop-width) {
-    max-width: 1920px;
-    min-height: 400px;
-    position: relative;
-    margin: 0 auto;
-  }
-}
-
-.page-footer__map-layer {
-  @media (min-width: @desktop-width) {
-    min-height: 400px;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 }
 
@@ -850,13 +863,13 @@
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   position: absolute;
-  left: 20px;
+  left: 0;
+  top: 0;
 
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
     background-size: 40px;
-    left: 28px;
   }
 }
 
@@ -869,13 +882,13 @@
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   position: absolute;
-  left: 20px;
+  left: 0;
+  top: 0;
 
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
     background-size: 40px;
-    left: 28px;
   }
 }
 
@@ -888,13 +901,13 @@
   background-image: url("../img/radio-on-hover.svg");
   background-repeat: no-repeat;
   position: absolute;
-  left: 20px;
+  left: 0;
+  top: 0;
 
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
     background-size: 40px;
-    left: 28px;
   }
 }
 
@@ -907,13 +920,13 @@
   background-image: url("../img/radio-off-hover.svg");
   background-repeat: no-repeat;
   position: absolute;
-  left: 20px;
+  left: 0;
+  top: 0;
 
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
     background-size: 40px;
-    left: 28px;
   }
 }
 
@@ -925,23 +938,12 @@
 }
 
 .selection__wrapper-checkbox {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 12.3px;
+  }
+
   position: relative;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 32px;
-
-    &:last-child {
-      margin-bottom: 32px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-
-    &:last-child {
-      margin: 0;
-    }
-  }
+  margin: 0;
 }
 
 .selection__checkbox + label::before {
@@ -954,6 +956,7 @@
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
+  top: 0;
 
   @media (min-width: @tablet-width) {
     width: 40px;
@@ -972,6 +975,7 @@
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
+  top: 0;
 
   @media (min-width: @tablet-width) {
     width: 40px;
@@ -990,6 +994,7 @@
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
+  top: 0;
 
   @media (min-width: @tablet-width) {
     width: 40px;
@@ -1008,6 +1013,7 @@
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
+  top: 0;
 
   @media (min-width: @tablet-width) {
     width: 40px;

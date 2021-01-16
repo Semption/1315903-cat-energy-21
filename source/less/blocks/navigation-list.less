@@ -86,14 +86,13 @@
   text-decoration: none;
   word-break: break-all;
 
-  &:hover {
+  &[href]:hover {
     opacity: 0.6;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
-
 
   @media (max-width: @mobile-width-only) {
     font-family: "Oswald Medium", "Arial", serif;
@@ -108,6 +107,7 @@
     color: @c-white;
   }
 }
+
 
 .navigation-list__link--formpage {
   color: @c-black;
